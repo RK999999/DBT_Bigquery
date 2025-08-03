@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: jaffle_shop
+    description: "raw tables used from bigquery"
+    database: dbt-tutorial  
+    schema: jaffle_shop  
+    tables:
+      - name: customers
+      - name: orders
+
+  - name: stripe
+    description: "raw tables used from bigquery"
+    database: dbt-tutorial
+    schema: stripe
+    tables:
+      - name: payment
